@@ -16,6 +16,10 @@ namespace fNbt {
         /// May be <c>null</c> for detached tags. </summary>
         public NbtTag? Parent { get; internal set; }
 
+        /// <summary>
+        /// Unique ID to a tag. 
+        /// </summary>
+        public Guid Uuid { get; } = Guid.NewGuid();
         /// <summary> Type of this tag. </summary>
         public abstract NbtTagType TagType { get; }
 
